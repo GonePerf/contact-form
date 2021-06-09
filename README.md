@@ -1,5 +1,13 @@
 # zadanie
+## VERSIONS
+```
+node -v
+v15.3.0
 
+vue --version
+@vue/cli 4.5.12
+
+```
 ## Project setup
 ```
 npm install

@@ -1,10 +1,29 @@
+/* GLOBAL STYLES */
 :root {
     --primary: #4f515a;
     --secondary: #dbdbdb;
     --warning: #f6cb86;
 }
 
-form {
+#app {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+#nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secondary);
+    margin-bottom: 20px;
+}
+#nav select {
+    padding: 7px;
+    outline: none;
+}
+
+.contact-form form {
     max-width: 600px;
     min-width: 260px;
     margin: 0 auto;
@@ -12,11 +31,8 @@ form {
     box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.05);  
     background: white;
 }
-select {
-    padding: 7px;
-    outline: none;
-}
-input, textarea {
+
+.contact-form input, textarea {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 570px;
     border: 0;
@@ -24,23 +40,25 @@ input, textarea {
     padding: 6px;
     outline: none;
     display: block;
-    resize: vertical;
     min-height: 35px;
     width: 100%;
+    color: #555;
     box-sizing: border-box;
     margin: 12px auto;
     transition: .2s;
 }
-textarea {
+.contact-form textarea {
     margin-top: 20px;
     min-height: 100px;
+    resize: vertical;
 }
-input:focus, textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
     font-size: 101%;
     transition: .2s;
+    color: black;
 }
 
-.buttons {
+.contact-form .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;

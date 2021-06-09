@@ -1,35 +1,34 @@
 <template>
- <div class="contact-form">
-   <transition name="form" appear>
-    <form @submit.prevent="handleSend">
-          <fieldset>
-            <legend><h3>{{ $t('header') }}</h3></legend>
+  <div class="contact-form">
+    <transition name="form" appear>
+      <form @submit.prevent="handleSend">
+        <fieldset>
+          <legend><h3>{{ $t('header') }}</h3></legend>
             
-            <div class="personal-data"> 
-              <input type="text" v-model="name"
-                :placeholder="$t('form.name')">
-              <input type="text" v-model="surname"
-                :placeholder="$t('form.surname')">
-            </div>
+          <div class="personal-data"> 
+            <input type="text" v-model="name"
+              :placeholder="$t('form.name')">
+            <input type="text" v-model="surname"
+              :placeholder="$t('form.surname')">
+          </div>
             
-            <input type="email" v-model="email"
-              :placeholder="$t('form.email')" >
-            <textarea v-model="content"
-              :placeholder="$t('form.content')">
-            </textarea>
+          <input type="email" v-model="email"
+            :placeholder="$t('form.email')" >
+          <textarea v-model="content"
+            :placeholder="$t('form.content')">
+          </textarea>
             
-            <div class="buttons">
-              <button class="btn-clear" 
-                  @click="handleClear">{{ $t('form.btn-clear') }}
-              </button>
-              <button class="btn-send">
-                {{ $t('form.btn-send') }}
-              </button>
-            </div> 
-            
-          </fieldset>           
+          <div class="buttons">
+            <button class="btn-clear" 
+              @click="handleClear">{{ $t('form.btn-clear') }}
+            </button>
+            <button class="btn-send">
+              {{ $t('form.btn-send') }}
+            </button>
+          </div>   
+        </fieldset>           
       </form>
-   </transition>
+    </transition>
   </div>
 </template>
 
@@ -57,6 +56,8 @@ export default {
 </script>
 
 <style scoped>
+
+/* ANIMACJA */
   .form-enter-from, .form-leave-to {
     opacity: 0;
     transform: scale(0.4);
@@ -64,15 +65,8 @@ export default {
   .form-enter-active {
     transition: all ease .3s;
   }
-  
-  .btn-clear {
-    width: 100px;
-    background: #e48d5a;
-  }
-  .btn-send {
-    width: 160px;
-    background: #42b983;
-  }
+/* -- */
+
   fieldset {
     border: 1px solid var(--secondary);
     border-radius: 20px;
@@ -83,6 +77,16 @@ export default {
     padding: 0 20px;
     text-align: left;
   }
+  
+
+  .btn-clear {
+    width: 100px;
+    background: #e48d5a;
+  }
+  .btn-send {
+    width: 173px;
+    background: #42b983;
+  }
   .personal-data{
     display: flex;
   }
@@ -91,6 +95,10 @@ export default {
   }
 
   @media (max-width: 630px) {
+    fieldset {
+      padding: 15px;
+    }
+    
     .personal-data{
       display: block;
     }
@@ -98,13 +106,15 @@ export default {
       width: 100%;
     }
     button {
-      font-size: 80%;
+      font-size: 65%;
+      height: 37px;
+      padding: 0 5px;
     }
     .btn-clear {
-      width: 90px;
+      width: 80px;
     }
     .btn-send {
-      width: 130px;
+      width: 110px;
     }
   }
 </style>
