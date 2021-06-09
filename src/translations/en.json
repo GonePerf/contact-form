@@ -1,0 +1,12 @@
+{
+    "header": "Send opinion",
+    "lang": "Language:",
+    "form": {
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "content": "Message",
+        "btn-clear": "Clear",
+        "btn-send": "Send ➝"     
+    }
+}

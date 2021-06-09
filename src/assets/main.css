@@ -1,0 +1,65 @@
+:root {
+    --primary: #4f515a;
+    --secondary: #dbdbdb;
+    --warning: #f6cb86;
+}
+
+form {
+    max-width: 600px;
+    min-width: 260px;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.05);  
+    background: white;
+}
+select {
+    padding: 7px;
+    outline: none;
+}
+input, textarea {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 570px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary);
+    padding: 6px;
+    outline: none;
+    display: block;
+    resize: vertical;
+    min-height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px auto;
+    transition: .2s;
+}
+textarea {
+    margin-top: 20px;
+    min-height: 100px;
+}
+input:focus, textarea:focus {
+    font-size: 101%;
+    transition: .2s;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+button {
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: .2s;
+}
+button:hover {
+    transition: .2s;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+

@@ -1,0 +1,12 @@
+{
+    "header": "Wyślij opinię",
+    "lang": "Język:",
+    "form": {
+        "name": "Imie",
+        "surname": "Nazwisko",
+        "email": "Email",
+        "content": "Treść",
+        "btn-clear": "Wyczyść",
+        "btn-send": "Wyślij ➝"
+    }
+}
